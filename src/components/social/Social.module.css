@@ -1,0 +1,36 @@
+.social {
+    position: fixed;
+    top: 30%;
+    right: 0%;
+    width: 3rem;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    padding-left: 1rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(28, 31, 34, 0.2);
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    -webkit-clip-path: polygon(0 0,100% 0,0 100%);
+    clip-path: polygon(100% 0,2% 11%,2% 89%,100% 100%);
+}
+
+.social a {
+    font-size: 2rem;
+    padding: .7rem;
+    color: #fff;;
+    transition: .5s ease;
+}
+
+.social a:hover {
+    color: #f0cd2f;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 576px) {
+    .social {
+        display:none;
+    }
+}

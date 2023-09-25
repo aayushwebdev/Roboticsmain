@@ -1,0 +1,115 @@
+/* .sponsors {
+    width: 100%;
+    height: 40vh;
+    margin: 4rem 0;
+    contain:content;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.heading h3 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+    background: linear-gradient(to right, #f32170, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position:relative;
+}
+
+.heading h3::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #f0cd2f;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(5,2fr);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.sponsorImg {
+    border-radius: 2rem;
+}
+
+.sponsorImg img {
+    width: 12rem;
+    border-radius : 1rem;
+    display: block;
+    transition: .5s ease;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .container {
+        grid-template-columns: repeat(3, 5fr);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        grid-template-columns: repeat(2,5fr);
+    }
+} */
+
+.sponsors {
+    height: 20vh;
+    background: #081c28;
+    padding: 3rem;
+    margin: 7rem 0;
+}
+
+.sponsorImg img {
+    border-radius: 2rem;
+    width: 15rem;
+}
+
+@media screen and (max-width: 768px) {
+    .sponsors {
+        height: fit-content;
+    }
+
+    .sponsorImg img {
+        width: 8rem;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sponsors {
+        margin: 1rem 0;
+    }
+
+    .sponsorImg img {
+        width: 4rem;
+        border-radius: .5rem;
+    }
+}

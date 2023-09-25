@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Goldman:wght@400;700&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+
+.projects {
+    margin: 6rem 0;
+    position: relative;
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+  }
+  
+  .heading h3 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-family: 'Goldman', cursive;
+    font-weight: 400;  
+    background: linear-gradient(to right, #155563, #81e0ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position:relative;
+  }
+  
+  .heading h3::after {
+    content: "";
+    position: relative;
+    width: 80%;
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    background: radial-gradient(#155563, #03141e);
+  }
+  
+  .heading p{
+    font-size: px;
+    color: #666;
+    margin-bottom: 35px;
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  .modalContainer {
+    max-width: 600px;
+    width: 100%;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: #fff;
+    box-shadow: 0px 0px 18px 0px rgba(0,0,0,0.75);
+  }
+
+  .modalContainer img {
+    width: 250px;
+    object-fit: cover;
+  }
+
+  .modalRight {
+    width: 100%;
+
+  }
+
+  .closeBtn {
+    position : fixed;
+    top :8px;
+    right: 8px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+  }
+
+  .btnContainer {
+    display: flex;
+    padding: 1rem 1rem;
+
+  }
+
+  .btnContainer button {
+    width: 100%;
+    margin: .5rem;
+    padding : 16px 0;
+    border: none;
+    color: #fff;
+  }
+
+  .btnPrimary {
+    background-color: #411b57;
+  }
+
+  .btnOutline {
+    background-color: #fa7699;
+  }
+
+  .bold {
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 500px) {
+    .modalContainer {
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .modalContainer img {
+      width: 100%;
+    }
+
+    .closeBtn {
+      color: #fff;
+    }
+  }

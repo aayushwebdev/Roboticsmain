@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Goldman:wght@400;700&family=Orbitron:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+.about {
+    padding: 8rem 10%;
+}
+
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.heading h3 {
+    font-size: 50px;
+    margin-bottom: 25px;
+    font-family: "Goldman", cursive;
+    font-weight: 500;
+    background: linear-gradient(to right, #155563, #81e0ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    position:relative;
+}
+
+.heading h3::after {
+    content: "";
+    position: relative;
+    width: 80%;  
+    height: 2px;
+    display: block;
+    margin: 0 auto;
+    background: radial-gradient(#155563, #03141e);
+}
+
+.heading p{
+    font-size: px;
+    color: #666;
+    margin-bottom: 35px;
+}
+
+.aboutContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.aboutImg {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.aboutImg img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.aboutImg:hover img{
+    transform: scale(1.2);
+}
+
+.aboutContent {
+    flex: 1;
+    max-height: none;
+}
+
+.aboutContent p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        padding: 0px 20px;
+    }
+
+    .heading h1 {
+        font-size: 36px;
+    }
+
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+
+    .aboutContainer {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .aboutImg {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .aboutContent p{
+        padding: 0px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .aboutContent {
+        max-height: 22.5em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
