@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 1px solid #666;
-    background-color: transparent;
+    border: .5px solid #2a2a2a;
+    background-color: #03131d;
     color: #666;
     width: 25rem;
     height: fit-content;
@@ -55,15 +55,16 @@
 
 
 .btn {
-  background: #c7a820;
-    color: #000;
-    border: none;
+  background: transparent;
+    color: #a08304;
+    border: .5px solid #a08304;;
     outline: none;
-    font-size: 1.2rem;
+    text-align: right;
+    font-size: 1rem;
     border-radius: 10px;
-    padding: 11px 1rem;
+    padding: .5rem 1rem;
     /* margin: 0 0.5rem ; */
-    width: 24rem;
+    width: auto;
     cursor: pointer;
     transition: .5s ease;
   }
@@ -89,3 +90,63 @@
       font-size: .8rem;
     }
   }
+
+  .cardContent p {
+    font-size: 15px;
+    color: #666;
+    padding: 0 2rem;    
+
+}
+
+.text {
+    --max-lines: 3;
+    --line-height: 1.4;
+
+    max-height: calc(var(--max-lines) * 1em * var(--line-height));
+    line-height: var(--line-height);
+    
+    overflow: hidden;
+    position: relative;
+}
+
+.text:has(+ .expandBtn:not(:checked))::before {
+    content: "";
+    position: absolute;
+    height: calc(1em * var(--line-height));
+    width: 100%;
+    bottom: 0;
+    pointer-events: none
+}
+
+.expandBtn {
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    color: #eedd44;
+    font-size: 17px;
+    text-align: center; 
+    background: none;
+    padding: 5px;
+}
+
+.expandBtn::before {
+    content: "See More"; 
+}
+
+.expandBtn:checked::before {
+    content: "See Less";
+}
+
+.text:has(+ .expandBtn:checked) {
+    max-height: none;  
+}
+
+.card p a {
+    color:#eedd44;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgba(238, 221, 68, 0.8);
+}

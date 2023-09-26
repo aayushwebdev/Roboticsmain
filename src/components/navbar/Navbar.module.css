@@ -96,7 +96,7 @@
     
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.1);
+    /* background: rgba(255, 255, 255, 0.1); */
     border: 1px solid #3e3e3e;
     color: #666;
     padding: .6rem 1.4rem;
@@ -160,7 +160,7 @@
   }
 
   .register {
-    background: #da3;
+    background: #0f5464;
     padding: 0.4rem 1rem;
     color: black !important;
     border-radius: 10px 0 10px 0;
@@ -176,7 +176,7 @@
   /* Responsive Styles */
   @media screen and (max-width: 768px) {
     .navbar {
-        width: 88%;
+        width: 80%;
         white-space:nowrap;
     }
 

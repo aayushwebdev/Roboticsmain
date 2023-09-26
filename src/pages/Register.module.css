@@ -3,15 +3,44 @@
     height: 100vh;
     align-items: center;
     text-align: center;
-  background-image: linear-gradient(95deg, black, #083E5E);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/registerbanner.png);
+    /* background: black; */
+  /* background-image: linear-gradient(95deg, black, #083E5E); */
 }
 
+.registerHeader {
 
-.register img {
-    width: 12rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    display: flex;
+    width: auto;
+    padding: 2rem 0 4rem 0;
+    margin: 0 8.5%; 
+    justify-content: space-between;
 }
+
+.registerHeader a  {
+    color: #abafee;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.logoSection img {
+    width: 10rem;
+    margin-top: -1rem;
+}
+
+.logoSection p {
+    color: #666;
+    font-size: 15px;
+}
+
+.manit {
+    width: 3rem;
+    height: 3rem;
+}
+
 
 .registerContent {
     display: grid;
@@ -22,6 +51,7 @@
 
 .heading {
     margin-top: 5rem;
+    text-align: left;
 }
 
 .heading h1 {
@@ -34,12 +64,17 @@
 }
 
 .heading h3 {
-    font-size: 70px;
+    font-size: 50px;
     color: #fff;
-
-    background: linear-gradient(to right, #004dcac3, #00aed5);
+    padding-left: 2rem;
+    background: #abafee;
+    /* background: linear-gradient(to right, #004dcac3, #00aed5); */
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+.automax {
+    width: 30rem;
 }
 
 .container {
@@ -57,21 +92,12 @@
 .container h2 {
     font-size: 30px;
     margin-bottom: 45px;
-    font-weight: 500;
-    background: linear-gradient(to right, #155563, #81e0ff);
+    font-weight: 600;
+    /* background: linear-gradient(to right, #155563, #81e0ff); */
+    background: #abafee;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     position:relative;
-}
-
-.container h2::after {
-    content: "";
-    position: relative;
-    width: 40%;  
-    height: 3px;
-    display: block;
-    margin: 0 auto;
-    background: radial-gradient(#155563, #03141e);
 }
 
 input[type="text"], input[type="email"], input[type="number"], input[type="date"] {
@@ -84,7 +110,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="date"
 }
 
 .container button {
-    background-color: #d3b400;
+    background-color: #abafee;
     color: #000;
     padding: 10px 20px;
     font-size: 15px;
@@ -95,7 +121,7 @@ input[type="text"], input[type="email"], input[type="number"], input[type="date"
 }
 
 .container button:hover {
-    background-color: #b39b00;
+    background-color: #989fff;
 }
 
 .footer p {
@@ -103,4 +129,29 @@ input[type="text"], input[type="email"], input[type="number"], input[type="date"
     color: #5a5a5a;
     margin-top: 2.4rem;
     text-align:center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .register {
+        height: auto;
+    }
+    
+    .footerHeader {
+        justify-content: center;
+    }
+
+    .footerHeader a {
+        text-align: left;
+        left: 0;
+    }
+    
+    .manit {
+        display: none;
+    }
+
+    .registerContent {
+        grid-template-columns : 1fr;
+        text-align: center;
+    }
 }

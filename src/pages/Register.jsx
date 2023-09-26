@@ -1,15 +1,25 @@
 import React from 'react'
 import styles from './Register.module.css';
 import Logo from '../images/logo.png';
+import Manit from '../images/manit.png';
 import Automax from '../images/automax logo.png'
+import { FiArrowLeft } from 'react-icons/fi';
+
 
 const Register = () => {
   return (
     <div className={styles.register}>
-    <img src={Logo} alt='' />
+    <div className={styles.registerHeader} >
+      <a href='/'><FiArrowLeft /> Home</a>
+      <div className={styles.logoSection}>
+        <img src={Logo} alt='' />
+        <p>PRESENTS</p>
+      </div>
+      <img className={styles.manit} src={Manit} alt='' />
+    </div>
         <div className={styles.registerContent}>
             <div className={styles.heading}>
-            <h1>Automax</h1>
+            <img className={styles.automax} src={Automax} alt='' />
              <h3>Grab your<br/> passes now!</h3>
             </div>
         

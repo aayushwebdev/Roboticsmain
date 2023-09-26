@@ -57,6 +57,7 @@
     text-align: center;
     /* border: 1rem solid white; */
     margin: 1rem;
+    /* overflow: hidden; */
     transition:.5s ease;
 } 
 
@@ -67,8 +68,8 @@
 }
 
 .cardImg img {
-    width: 450px;
-    height: 350px;
+    max-width: 100%;
+    height: auto;
 }
 
 .cardContent h5 {
@@ -143,6 +144,10 @@ a:hover {
         padding: 0;
     }
 
+    .cardImg {
+        width: auto;
+    }
+
     .heading {
         padding: 0px 20px;
         margin-bottom: 3rem;
@@ -164,7 +169,13 @@ a:hover {
         margin: 0;
         margin-bottom: 6rem;
     }
-    .cardImg img {
-        width: 400px;
+
+    .heading h3 {
+        font-size: 28px;
     }
+
+    .cardImg {
+        width: auto;
+    }
+    
 }

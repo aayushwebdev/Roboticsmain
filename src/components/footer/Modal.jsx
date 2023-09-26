@@ -20,34 +20,26 @@ const Modal = ({open, onClose}) => {
         <div className={styles.modalContainer}>
         <p onClick={onClose} className={styles.closeBtn}>X</p>
         
-            <div className={styles.card}>
-                <div className={styles.imgContainer}>
-                    <div className={styles.skewed}>
-                        <img src={Sakshi} id='img' alt='' />
-                    </div>
+            <div className={styles.container}>
+                <div className={styles.shape}>
+                    <div className={styles.image1}></div>
                 </div>
-                <div className={styles.cont}>
-                    <h2>Shwetank Aryan</h2>
-                    <p>Web developer</p>
-                    <div className={styles.links}>
-                        <a><BiLogoLinkedin /></a>
-                        <a><FaInstagram /></a>
-                    </div>
+                <h3>Shwetank Aryan</h3>
+                <h4 className={styles.title}>Web Developer</h4>
+                <div className={styles.icons}>
+                    <a href='/'><FaInstagram /></a>
+                    <a href='/'><BiLogoLinkedin /></a>
                 </div>
             </div>
-            <div className={styles.card}>
-                <div className={styles.imgContainer}>
-                    <div className={styles.skewed}>
-                        <img src={Shwetank1} id='img' alt='' />
-                    </div>
+            <div className={styles.container}>
+                <div className={styles.shape}>
+                    <div className={styles.image2}></div>
                 </div>
-                <div className={styles.cont}>
-                    <h2>Aayush Meshram</h2>
-                    <p>Web developer</p>
-                    <div className={styles.links}>
-                        <a><BiLogoLinkedin /></a>
-                        <a><FaInstagram /></a>
-                    </div>
+                <h3>Aayush Meshram</h3>
+                <h4 className={styles.title}>Web Developer</h4>
+                <div className={styles.icons}>
+                    <a href='/'><FaInstagram /></a>
+                    <a href='/'><BiLogoLinkedin /></a>
                 </div>
             </div>
         </div>

@@ -25,24 +25,11 @@ function Card({ imagen }) {
     >
       <img src={imagen} alt="" />
       <h2>Roboarm</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-        volutpat.
-      </p>
-      <div className={Styles.btnn}>
-      <button className={Styles.btn} onClick={() => setModalIsOpen(true)}>See More</button>
-      </div>
+      <p className={Styles.text}>In the ideation round of Robocon 2023, our team scored an impressive 98.5 points out of 100. We presented a comprehensive project that involved CAD modeling and documentation, focusing on the development of ring throwing and collecting robots. This outstanding achievement reflects our team's dedication, creativity, and technical expertise, reaffirming our commitment to excellence in robotics. We continue to explore new horizons and opportunities to apply our innovative ideas in other exciting endeavors.</p>
+      <input className={Styles.expandBtn} type='checkbox' />
+                
+
     </animated.div>
-    <div className={Styles.modal}>
-      <Modal isOpen={modalIsOpen}>
-        <h2>Modal title</h2>
-        <p>Modal Body</p>
-        <div>
-          <button onClick={() => setModalIsOpen(false)}>Close</button>
-        </div>
-      </Modal>
-    </div>
     
     </>
     

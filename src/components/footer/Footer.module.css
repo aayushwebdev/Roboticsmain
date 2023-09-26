@@ -219,8 +219,9 @@ textarea {
 }
 
 .overlay {
-    background-color: rgba(0,0,0,1);
-    position: fixed;
+    /* background-color: rgba(0,0,0,1); */
+    background-color: black;
+    /* position: fixed; */
     width: 100%;
     height: 100%;
 }
@@ -234,16 +235,20 @@ textarea {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 1rem;
     display: flex;
-    background-color: #fff;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.3);
     box-shadow: 0px 0px 10px 0px rgba( 0, 0,0,0.75);
 }
 
 .closeBtn {
     position: fixed;
+    font-size: 20px;
     top: 8px;
-    right: 8px;
-    color: black;   
+    right: 15px;
+    color: white;   
     cursor: pointer;    
 }
 
@@ -262,80 +267,90 @@ textarea {
     }
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* Card Styling */
 
-.imgContainer{
-    margin-bottom: -40px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.skewed{
-    width: 250px;
-    height: 290px;
-    margin: 50px 0 -50px 0;
-    border-radius: 30px;
-    transform: skewY(15deg);
-    overflow: hidden;
-}
-
-#img{
-    width: 100%;
-    height: 100%;    
-    object-fit: cover;
-    margin-top: -30px;
-    transform: skewY(-15deg);
-    transition: all 0.3s ease;
-}
-
-#img:hover{
-    background-size: 110%;
-}
-
-.cont{
+.container {
+    height: 350px;
     width: 300px;
-    height: 130px;
-    padding-top: 50px;
-    border-radius: 5px;
-    box-shadow:rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
-    display: flex;
-    flex-direction: column;
-    background: #003744;
-
+    /* box-shadow: 0 10px 20px black; */
+    background-color: #002031;
+    background-size: cover;
     justify-content: center;
+    border-radius: 20px 0 20px 0;
     align-items: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Abel', sans-serif;
 }
 
-.cont h2{
-    font-size: 25px;
-    color: #fff ;
+.image1 {
+    height: 150px;
+    width: 150px;
+    background-image: url('../../images/shwetank1.jpg');
+    background-size: cover;
+    border-radius: 50%;
+    border: 8px solid hwb(0 100% 0%);
+    position: relative;
+    top: 140px;
+    margin-left: 130px;
+    box-shadow: 0 2px 15px rgb(58, 54, 54);
+    transform: rotate(-20deg);
 }
 
-.cont p{
-    font-size: 16px;
-    margin-top: 1px;
-    color: #a2a2a2;
+.image2 {
+    height: 150px;
+    width: 150px;
+    background-image: url('../../images/aayush.jpeg');
+    background-size: cover;
+    border-radius: 50%;
+    border: 8px solid white;
+    position: relative;
+    top: 140px;
+    margin-left: 130px;
+    box-shadow: 0 2px 15px rgb(58, 54, 54);
+    transform: rotate(-20deg);
 }
 
-.cont .links{
-    width: 80%;
-    display: flex;
-    margin-top: -1rem;
-    justify-content: space-evenly;
+.shape {
+    height: 250px;
+    width: 400px;
+    background-color: #063449;
+    margin-left: -20px;
+    position: relative;
+    top: -80px;
+    /* box-shadow: 0 2px 15px black;     */
+    transform: rotate(25deg);
 }
 
-.cont .links a{
-    color: #0f5464;
+.container h3 {
+    margin-bottom: 10px;
+  margin-top: -35px;
+  font-weight: 600;
+    
+    color: rgba(255,255,255,0.8);
+    font-size: 1.2rem;
+}
+
+.container h4 {
+    margin-top: -40px;
+    font-size: .9rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.5);
+}
+
+.icons {
+    margin-top: 5px;
+    margin-left: -20px;
+}
+
+.icons a {
+    margin-left: 20px;
     font-size: 30px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
+    transition: 0.3s;
+    color: #0f5464;
 }
 
-.cont .links a:hover{
-    transform: scale(1.2);
-    color: #c9c9c9;
+.icons a:hover {
+    transform: scale(1.1);
+    color: white;
 }

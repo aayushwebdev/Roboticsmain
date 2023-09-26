@@ -114,17 +114,17 @@ function App() {
   ];
 
   return (
-    <div className={styles.projects}>
+    <div className={styles.gallery}>
     <div className={styles.heading}>
       <h3>Our Gallery</h3>
       <p>Capturing moments in our gallery</p>
     </div>
       <Carousel
         cards={cards}
-        height="400px"
+        height="500px"
         width="50%"
         margin="4rem auto"
-        offset={4}
+        offset={2}
         showArrows={true}
       />
     </div>
